@@ -1327,7 +1327,7 @@
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;
-  background-color: #888;
+  background-color: #03346e;
   color: #FFFFFF;
 }
 
@@ -1349,7 +1349,7 @@
 .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
 .show >
 .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-  background-color: #979797;
+  background-color: #021526;
   color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;

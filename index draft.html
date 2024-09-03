@@ -252,74 +252,29 @@
       <div class="portfolio-item" onclick="toggleDescription(15)">P16 ML Unsupervised learning</div>
       <div class="portfolio-item" onclick="toggleDescription(16)">P17 ML Churn Prediction</div>
       <div class="portfolio-item" onclick="toggleDescription(17)">P18 ML Phishing Classification</div>
-    </div>
-    <div id="portfolio-desc" class="portfolio-desc">
-        <div id="desc-0" class="desc-card" style="display: none;">
-            <h5 class="project-title"><b>Project 1 - Data Cleaning</b></h5>
-            <p>During my first project, I developed a data analysis project for Store 1, an e-commerce company that aims to better understand their customers' behavior through data analysis. The main objective was to evaluate and improve the quality of the collected data to make informed decisions that optimize the customer experience.</p>
-            <p>First, I identified issues in the collected data, such as incorrect data types for age and user ID, unnecessary spaces in names, and inconsistent formatting of favorite categories. After recognizing these issues, I applied data cleaning techniques to correct them, ensuring a coherent and usable database for future analysis.</p>
-            <p>Specifically, I transformed the user ID and age into appropriate integer values, removed unnecessary spaces, and adjusted names to a cleaner and more presentable format. Additionally, although I did not consider it necessary to change the categories to lowercase, I implemented a script to do so if the company requires it in the future.</p>
-            <p>To handle situations where data type conversion could fail, I developed code that prevents system errors and prompts the user to provide an appropriate numerical value instead of unprocessable text.</p>
-            <p>Additionally, I calculated key metrics on user spending habits, such as total, minimum, and maximum spending, and simulated new purchases to determine when a customer meets the loyalty criteria defined by the company.</p>
-            <p>The final step of the project was to design a method to summarize and present user information effectively. This included creating formatted messages with essential data and organizing the information into a table that facilitates future consultation and analysis.</p>
-            <p>In conclusion, this project not only improved the quality and coherence of Store 1's database but also provided crucial tools for data analysis and decision-making. The applied techniques will ensure that the company can better understand their customers and continuously improve their online shopping experience.</p>
-            <p><a href="www.google.com">Check out my repository</a></p>
-        </div>
-
-        <div id="desc-1" class="desc-card" style="display: none;">
-            <h5 class="project-title"><b>Project 2 - Data Preprocessing</b></h5>
-            <p>In this project, I aimed to compare musical preferences between the cities of Springfield and Shelbyville using real online music streaming data. The main objective was to test three hypotheses related to user activity and musical genres.</p>
-            <p>The project began with importing and examining the dataset, which contained seven columns: user ID, song title, artist, genre, city, time, and day. Initial data exploration revealed issues like inconsistent headers, missing values in 'Track', 'artist', and 'genre', and 3826 duplicate entries.</p>
-            <p>I addressed these issues by standardizing the headers, replacing missing values with 'unknown', and removing explicit duplicates. For implicit duplicates, particularly within the 'genre' column, I ensured names were consistent to maintain data accuracy. This preprocessing ensured the dataset was clean and ready for analysis.</p>
-            <p>For hypothesis testing:</p>
-            <ol>
-                <li>I found that user activity peaks on different days in each city, confirming that Springfield sees more activity on Fridays, while Shelbyville peaks on Wednesdays.</li>
-                <li>When comparing musical preferences on Monday mornings and Friday evenings, I discovered only minor differences, leading to the rejection of this hypothesis.</li>
-                <li>The analysis showed that pop was the most preferred genre in both cities, with rap not making the top 10 in either city, thus rejecting the hypothesis that Springfield prefers pop and Shelbyville prefers rap.</li>
-            </ol>
-            <p>In conclusion, my analysis revealed different patterns of user activity between the two cities but similar musical genre preferences, with pop being the top choice in both. The project underscored the importance of thorough data preprocessing and provided valuable insights into user behavior that can inform business decisions.</p>
-            <p><a href="www.google.com">Check out my repository</a></p>
-        </div>
-
-        <div id="desc-2" class="desc-card" style="display: none;">
-          <h5 class="project-title"><b>Project 3 - Extract Data Analysis (EDA)</b></h5>
-          <p>During my project, I developed a data analysis project for Instacart, an e-commerce grocery delivery platform aiming to better understand customer behavior through data analysis. The main objective was to evaluate and improve the quality of the collected data for informed decision-making that optimizes the customer experience.</p>
-          <p>First, I identified issues in the dataset, such as missing values in columns like "product_name" and "days_since_prior_order," duplicated entries in the "instacart_orders" data frame, and inconsistent formatting across different fields. I applied data cleaning techniques to correct these issues, ensuring a coherent and usable database for future analysis.</p>
-          <p>I standardized column names and data types, replaced missing values with appropriate placeholders (e.g., 'unknown'), and removed duplicated entries. For example, I found that 15 orders had been duplicated, likely due to a post-capture error. Additionally, corrected the "add_to_cart_order" column by identifying and addressing entries where orders had more than 64 products, which presented as null values due to a system error.</p>
-          <p>Next, I analyzed the data to extract key insights. I created bar charts to visualize customer ordering behavior by hour and day of the week, finding that most orders are placed between 10:00 AM and 4:00 PM, especially on Sundays, Mondays, and Tuesdays. I also examined how long customers typically wait between orders, with most reordering within 10 days.</p>
-          <p>I further explored product-specific data, identifying the top 20 most frequently ordered products, which primarily included fruits and vegetables. I calculated the reorder rates for each product and customer, revealing interesting patterns in customer loyalty and purchasing habits. For instance, bananas were found to be the most reordered product, and customers showed a 49% average reorder ratio, indicating significant repeat purchases.</p>
-          <p>Finally, I identified the top 20 items customers add first to their cart, highlighting that water, soda, and half & half were commonly added first. This analysis provided actionable insights into customer preferences and behaviors.</p>
-          <p>In conclusion, this project improved the quality and coherence of Instacart's database and provided crucial tools for data analysis and decision-making. The applied techniques and findings will help Instacart better understand their customers and continually improve their online shopping experience.</p>
-          <p><a href="www.google.com">Check out my repository</a></p>
-        </div>
-
-        <div id="desc-3" class="desc-card" style="display: none;">
-          <h5 class="project-title"><b>Project 4 - Hypothesis Testing</b></h5>
-          <p>During my recent project, I conducted a comprehensive analysis comparing two mobile plans, Surf and Ultimate, to assess their effectiveness and customer satisfaction. The primary objective was to analyze usage patterns and revenue generated by each plan to determine if the current offerings meet customer needs and to explore potential areas for improvement.</p>
-          <p>First, I analyzed the monthly call duration data for both plans. I found that the average call duration per month was similar for both plans, with Surf users averaging 428.8 minutes and Ultimate users averaging 430.45 minutes. However, the variance and standard deviation were slightly higher for Ultimate users, indicating a wider range of call durations among this group. Despite the similarities, a significant number of Surf users exceeded their plan's limits, suggesting that the Surf plan may not fully satisfy the needs of its users.</p>
-          <p>Next, I examined the number of messages sent each month by users of each plan. The analysis revealed that although both groups generally stayed within their plan limits, Ultimate users tended to send more messages on average compared to Surf users. The data also showed a positive skew in the distribution, with a significant portion of Surf users exceeding their plan's 50-message limit, leading to additional charges.</p>
-          <p>I then compared the internet data usage for both plans. The findings showed that, starting in the second half of the year, Surf users began to exceed their 15GB data limit on average, while Ultimate users, with a 30GB limit, rarely surpassed their cap. The analysis indicated that the Surf plan users often consumed more data than their plan allowed, resulting in additional charges and potential dissatisfaction.</p>
-          <p>Furthermore, I evaluated the revenue generated by each plan. Although the Surf plan had twice as many users as the Ultimate plan, the Ultimate plan generated higher revenue due to the additional charges incurred by users exceeding their plan limits. This trend was consistent throughout the year, with the gap narrowing slightly by December.</p>
-          <p>To statistically test these observations, I conducted hypothesis tests to compare the average revenue generated by users of the two plans and to evaluate whether the revenue from the NY-NJ area differed from other regions. The results confirmed that the average revenue differs significantly between the Surf and Ultimate plans, and between the NY-NJ region and other regions for the Ultimate plan. However, no significant difference was found for the Surf plan across different regions.</p>
-          <p>In conclusion, this project highlighted the potential shortcomings of the Surf plan in meeting customer needs, as evidenced by the frequent exceeding of plan limits for calls, messages, and data. This could lead to customer dissatisfaction and an increased risk of churn. To mitigate this, it may be necessary to reassess the Surf plan's offerings or encourage users to switch to the Ultimate plan. Additionally, the analysis underscored the importance of continually monitoring user behavior and adjusting plan features to better align with customer expectations and market trends.</p>
-          <p><a href="www.google.com">Check out my repository</a></p>
-        </div>
-
-        <div id="desc-4" class="desc-card" style="display: none;">
-          <h5 class="project-title"><b>Project 5 - Streamlit Dashboard</b></h5>
-          <p>During my project, I developed a data analysis project for used car sales. The objective was to create an interactive dashboard that stakeholders can use to explore various aspects of the car sales dataset, such as average prices, vehicle conditions, and other significant factors. The project involved using various data visualization techniques to present insights about vehicle conditions, prices, and other attributes via a Streamlit-based interactive dashboard.</p>
-          <p>First, I imported and cleaned the car sales data. This involved loading the data into a DataFrame from a CSV file, removing rows with missing values in the 'model_year' column, and converting columns to appropriate data types, such as converting 'date_posted' to datetime format. These preprocessing steps ensured that the dataset was ready for analysis and visualization.</p>          
-          <p>Next, I implemented an interactive dashboard using Streamlit. The dashboard allows users to filter and visualize car sales data based on several criteria like model year, car type, fuel type, and the number of cylinders. This interactive feature enables stakeholders to tailor the data views according to their specific needs and preferences.</p>          
-          <p>The dashboard includes various data visualizations such as bar charts, histograms, box plots, and scatter plots. These visualizations help derive meaningful insights into the dataset, such as the average prices of cars, their conditions, and odometer readings. By toggling between different views, users can gain a comprehensive understanding of the factors that influence car sales.</p>          
-          <p>Additionally, I ensured that the data visualizations are user-friendly and provide key insights about the cars. For instance, bar charts can show the distribution of car types, while scatter plots can depict the relationship between car prices and odometer readings. These visualizations facilitate data-driven decision-making for stakeholders.</p>          
-          <p>In conclusion, this project resulted in an interactive dashboard that effectively visualizes the used car sales dataset. The dashboard not only improved the usability of the dataset but also provided valuable insights into vehicle conditions, prices, and other attributes. The applied techniques will assist stakeholders in better understanding the car market and making informed decisions regarding car sales.</p>   
-          <p>Applink: <a href="https://car-sales-vm0b.onrender.com">Car Sales Dashboard</a></p>
-        </div>
-
-        <!-- Otros proyectos -->
-    </div>
+  </div>
+  <div id="portfolio-desc" class="portfolio-desc ">
+      <!-- Descripciones de los proyectos -->
+      <p id="desc-0" style="display: none;">Descripción del Proyecto 1</p>
+      <p id="desc-1" style="display: none;">Descripción del Proyecto 2</p>
+      <p id="desc-2" style="display: none;">Descripción del Proyecto 3</p>
+      <p id="desc-3" style="display: none;">Descripción del Proyecto 4</p>
+      <p id="desc-4" style="display: none;">Descripción del Proyecto 5</p>
+      <p id="desc-5" style="display: none;">Descripción del Proyecto 6</p>
+      <p id="desc-6" style="display: none;">Descripción del Proyecto 7</p>
+      <p id="desc-7" style="display: none;">Descripción del Proyecto 8</p>
+      <p id="desc-8" style="display: none;">Descripción del Proyecto 9</p>
+      <p id="desc-9" style="display: none;">Descripción del Proyecto 10</p>
+      <p id="desc-10" style="display: none;">Descripción del Proyecto 11</p>
+      <p id="desc-11" style="display: none;">Descripción del Proyecto 12</p>
+      <p id="desc-12" style="display: none;">Descripción del Proyecto 13</p>
+      <p id="desc-13" style="display: none;">Descripción del Proyecto 14</p>
+      <p id="desc-14" style="display: none;">Descripción del Proyecto 15</p>
+      <p id="desc-15" style="display: none;">Descripción del Proyecto 16</p>
+      <p id="desc-15" style="display: none;">Descripción del Proyecto 17</p>
+      <p id="desc-15" style="display: none;">Descripción del Proyecto 18</p>
+  </div>
 </div>
-
 
 <script src="js/portfolio.js"></script> <!-- Archivo JS externo -->
 <!-- ___________________________ -->

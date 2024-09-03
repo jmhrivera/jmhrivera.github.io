@@ -247,34 +247,244 @@
       <div class="portfolio-item" onclick="toggleDescription(10)">P11 ML Insurance Prediction</div>
       <div class="portfolio-item" onclick="toggleDescription(11)">P12 ML Car Price Prediction</div>
       <div class="portfolio-item" onclick="toggleDescription(12)">P13 ML Taxi Order Forecasting</div>
-      <div class="portfolio-item" onclick="toggleDescription(13)">P14 ML Sentimental Analysis</div>
+      <div class="portfolio-item" onclick="toggleDescription(13)">P14 Movie Rating by Sentimental Analysis</div>
       <div class="portfolio-item" onclick="toggleDescription(14)">P15 CNN Age Prediction</div>
       <div class="portfolio-item" onclick="toggleDescription(15)">P16 ML Unsupervised learning</div>
       <div class="portfolio-item" onclick="toggleDescription(16)">P17 ML Churn Prediction</div>
       <div class="portfolio-item" onclick="toggleDescription(17)">P18 ML Phishing Classification</div>
-  </div>
-  <div id="portfolio-desc" class="portfolio-desc ">
-      <!-- Descripciones de los proyectos -->
-      <p id="desc-0" style="display: none;">Descripción del Proyecto 1</p>
-      <p id="desc-1" style="display: none;">Descripción del Proyecto 2</p>
-      <p id="desc-2" style="display: none;">Descripción del Proyecto 3</p>
-      <p id="desc-3" style="display: none;">Descripción del Proyecto 4</p>
-      <p id="desc-4" style="display: none;">Descripción del Proyecto 5</p>
-      <p id="desc-5" style="display: none;">Descripción del Proyecto 6</p>
-      <p id="desc-6" style="display: none;">Descripción del Proyecto 7</p>
-      <p id="desc-7" style="display: none;">Descripción del Proyecto 8</p>
-      <p id="desc-8" style="display: none;">Descripción del Proyecto 9</p>
-      <p id="desc-9" style="display: none;">Descripción del Proyecto 10</p>
-      <p id="desc-10" style="display: none;">Descripción del Proyecto 11</p>
-      <p id="desc-11" style="display: none;">Descripción del Proyecto 12</p>
-      <p id="desc-12" style="display: none;">Descripción del Proyecto 13</p>
-      <p id="desc-13" style="display: none;">Descripción del Proyecto 14</p>
-      <p id="desc-14" style="display: none;">Descripción del Proyecto 15</p>
-      <p id="desc-15" style="display: none;">Descripción del Proyecto 16</p>
-      <p id="desc-15" style="display: none;">Descripción del Proyecto 17</p>
-      <p id="desc-15" style="display: none;">Descripción del Proyecto 18</p>
-  </div>
+    </div>
+    <div id="portfolio-desc" class="portfolio-desc">
+        <div id="desc-0" class="desc-card" style="display: none;">
+            <h5 class="project-title"><b>Project 1 - Data Cleaning</b></h5>
+            <p>During my first project, I developed a data analysis project for Store 1, an e-commerce company that aims to better understand their customers' behavior through data analysis. The main objective was to evaluate and improve the quality of the collected data to make informed decisions that optimize the customer experience.</p>
+            <p>First, I identified issues in the collected data, such as incorrect data types for age and user ID, unnecessary spaces in names, and inconsistent formatting of favorite categories. After recognizing these issues, I applied data cleaning techniques to correct them, ensuring a coherent and usable database for future analysis.</p>
+            <p>Specifically, I transformed the user ID and age into appropriate integer values, removed unnecessary spaces, and adjusted names to a cleaner and more presentable format. Additionally, although I did not consider it necessary to change the categories to lowercase, I implemented a script to do so if the company requires it in the future.</p>
+            <p>To handle situations where data type conversion could fail, I developed code that prevents system errors and prompts the user to provide an appropriate numerical value instead of unprocessable text.</p>
+            <p>Additionally, I calculated key metrics on user spending habits, such as total, minimum, and maximum spending, and simulated new purchases to determine when a customer meets the loyalty criteria defined by the company.</p>
+            <p>The final step of the project was to design a method to summarize and present user information effectively. This included creating formatted messages with essential data and organizing the information into a table that facilitates future consultation and analysis.</p>
+            <p>In conclusion, this project not only improved the quality and coherence of Store 1's database but also provided crucial tools for data analysis and decision-making. The applied techniques will ensure that the company can better understand their customers and continuously improve their online shopping experience.</p>
+            <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-1" class="desc-card" style="display: none;">
+            <h5 class="project-title"><b>Project 2 - Data Preprocessing</b></h5>
+            <p>In this project, I aimed to compare musical preferences between the cities of Springfield and Shelbyville using real online music streaming data. The main objective was to test three hypotheses related to user activity and musical genres.</p>
+            <p>The project began with importing and examining the dataset, which contained seven columns: user ID, song title, artist, genre, city, time, and day. Initial data exploration revealed issues like inconsistent headers, missing values in 'Track', 'artist', and 'genre', and 3826 duplicate entries.</p>
+            <p>I addressed these issues by standardizing the headers, replacing missing values with 'unknown', and removing explicit duplicates. For implicit duplicates, particularly within the 'genre' column, I ensured names were consistent to maintain data accuracy. This preprocessing ensured the dataset was clean and ready for analysis.</p>
+            <p>For hypothesis testing:</p>
+            <ol>
+                <li>I found that user activity peaks on different days in each city, confirming that Springfield sees more activity on Fridays, while Shelbyville peaks on Wednesdays.</li>
+                <li>When comparing musical preferences on Monday mornings and Friday evenings, I discovered only minor differences, leading to the rejection of this hypothesis.</li>
+                <li>The analysis showed that pop was the most preferred genre in both cities, with rap not making the top 10 in either city, thus rejecting the hypothesis that Springfield prefers pop and Shelbyville prefers rap.</li>
+            </ol>
+            <p>In conclusion, my analysis revealed different patterns of user activity between the two cities but similar musical genre preferences, with pop being the top choice in both. The project underscored the importance of thorough data preprocessing and provided valuable insights into user behavior that can inform business decisions.</p>
+            <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-2" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 3 - Extract Data Analysis (EDA)</b></h5>
+          <p>During my project, I developed a data analysis project for Instacart, an e-commerce grocery delivery platform aiming to better understand customer behavior through data analysis. The main objective was to evaluate and improve the quality of the collected data for informed decision-making that optimizes the customer experience.</p>
+          <p>First, I identified issues in the dataset, such as missing values in columns like "product_name" and "days_since_prior_order," duplicated entries in the "instacart_orders" data frame, and inconsistent formatting across different fields. I applied data cleaning techniques to correct these issues, ensuring a coherent and usable database for future analysis.</p>
+          <p>I standardized column names and data types, replaced missing values with appropriate placeholders (e.g., 'unknown'), and removed duplicated entries. For example, I found that 15 orders had been duplicated, likely due to a post-capture error. Additionally, corrected the "add_to_cart_order" column by identifying and addressing entries where orders had more than 64 products, which presented as null values due to a system error.</p>
+          <p>Next, I analyzed the data to extract key insights. I created bar charts to visualize customer ordering behavior by hour and day of the week, finding that most orders are placed between 10:00 AM and 4:00 PM, especially on Sundays, Mondays, and Tuesdays. I also examined how long customers typically wait between orders, with most reordering within 10 days.</p>
+          <p>I further explored product-specific data, identifying the top 20 most frequently ordered products, which primarily included fruits and vegetables. I calculated the reorder rates for each product and customer, revealing interesting patterns in customer loyalty and purchasing habits. For instance, bananas were found to be the most reordered product, and customers showed a 49% average reorder ratio, indicating significant repeat purchases.</p>
+          <p>Finally, I identified the top 20 items customers add first to their cart, highlighting that water, soda, and half & half were commonly added first. This analysis provided actionable insights into customer preferences and behaviors.</p>
+          <p>In conclusion, this project improved the quality and coherence of Instacart's database and provided crucial tools for data analysis and decision-making. The applied techniques and findings will help Instacart better understand their customers and continually improve their online shopping experience.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-3" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 4 - Hypothesis Testing</b></h5>
+          <p>During my recent project, I conducted a comprehensive analysis comparing two mobile plans, Surf and Ultimate, to assess their effectiveness and customer satisfaction. The primary objective was to analyze usage patterns and revenue generated by each plan to determine if the current offerings meet customer needs and to explore potential areas for improvement.</p>
+          <p>First, I analyzed the monthly call duration data for both plans. I found that the average call duration per month was similar for both plans, with Surf users averaging 428.8 minutes and Ultimate users averaging 430.45 minutes. However, the variance and standard deviation were slightly higher for Ultimate users, indicating a wider range of call durations among this group. Despite the similarities, a significant number of Surf users exceeded their plan's limits, suggesting that the Surf plan may not fully satisfy the needs of its users.</p>
+          <p>Next, I examined the number of messages sent each month by users of each plan. The analysis revealed that although both groups generally stayed within their plan limits, Ultimate users tended to send more messages on average compared to Surf users. The data also showed a positive skew in the distribution, with a significant portion of Surf users exceeding their plan's 50-message limit, leading to additional charges.</p>
+          <p>I then compared the internet data usage for both plans. The findings showed that, starting in the second half of the year, Surf users began to exceed their 15GB data limit on average, while Ultimate users, with a 30GB limit, rarely surpassed their cap. The analysis indicated that the Surf plan users often consumed more data than their plan allowed, resulting in additional charges and potential dissatisfaction.</p>
+          <p>Furthermore, I evaluated the revenue generated by each plan. Although the Surf plan had twice as many users as the Ultimate plan, the Ultimate plan generated higher revenue due to the additional charges incurred by users exceeding their plan limits. This trend was consistent throughout the year, with the gap narrowing slightly by December.</p>
+          <p>To statistically test these observations, I conducted hypothesis tests to compare the average revenue generated by users of the two plans and to evaluate whether the revenue from the NY-NJ area differed from other regions. The results confirmed that the average revenue differs significantly between the Surf and Ultimate plans, and between the NY-NJ region and other regions for the Ultimate plan. However, no significant difference was found for the Surf plan across different regions.</p>
+          <p>In conclusion, this project highlighted the potential shortcomings of the Surf plan in meeting customer needs, as evidenced by the frequent exceeding of plan limits for calls, messages, and data. This could lead to customer dissatisfaction and an increased risk of churn. To mitigate this, it may be necessary to reassess the Surf plan's offerings or encourage users to switch to the Ultimate plan. Additionally, the analysis underscored the importance of continually monitoring user behavior and adjusting plan features to better align with customer expectations and market trends.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-4" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 5 - Streamlit Dashboard</b></h5>
+          <p>During my project, I developed a data analysis project for used car sales. The objective was to create an interactive dashboard that stakeholders can use to explore various aspects of the car sales dataset, such as average prices, vehicle conditions, and other significant factors. The project involved using various data visualization techniques to present insights about vehicle conditions, prices, and other attributes via a Streamlit-based interactive dashboard.</p>
+          <p>First, I imported and cleaned the car sales data. This involved loading the data into a DataFrame from a CSV file, removing rows with missing values in the 'model_year' column, and converting columns to appropriate data types, such as converting 'date_posted' to datetime format. These preprocessing steps ensured that the dataset was ready for analysis and visualization.</p>          
+          <p>Next, I implemented an interactive dashboard using Streamlit. The dashboard allows users to filter and visualize car sales data based on several criteria like model year, car type, fuel type, and the number of cylinders. This interactive feature enables stakeholders to tailor the data views according to their specific needs and preferences.</p>          
+          <p>The dashboard includes various data visualizations such as bar charts, histograms, box plots, and scatter plots. These visualizations help derive meaningful insights into the dataset, such as the average prices of cars, their conditions, and odometer readings. By toggling between different views, users can gain a comprehensive understanding of the factors that influence car sales.</p>          
+          <p>Additionally, I ensured that the data visualizations are user-friendly and provide key insights about the cars. For instance, bar charts can show the distribution of car types, while scatter plots can depict the relationship between car prices and odometer readings. These visualizations facilitate data-driven decision-making for stakeholders.</p>          
+          <p>In conclusion, this project resulted in an interactive dashboard that effectively visualizes the used car sales dataset. The dashboard not only improved the usability of the dataset but also provided valuable insights into vehicle conditions, prices, and other attributes. The applied techniques will assist stakeholders in better understanding the car market and making informed decisions regarding car sales.</p>   
+          <p>Applink: <a href="https://car-sales-vm0b.onrender.com">Car Sales Dashboard</a></p>
+        </div>
+
+        <div id="desc-5" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 6 - Gaming API database</b></h5>
+          <p>During this project, I developed a data analysis workflow to process and clean a dataset containing information about various games. The main objective was to ensure that the data was accurate, consistent, and ready for further analysis.</p>
+          <p>First, I imported the necessary libraries, including pandas, numpy, matplotlib, plotly, and seaborn. The dataset was then loaded into a DataFrame using pandas.</p>
+          <p>In the data processing step, I followed a systematic approach:</p>
+          <p>Data Examination: I thoroughly examined the dataset to identify any missing values, outliers, duplicates, and other anomalies that could affect the analysis.</p>
+          <p>Handling Missing Data: A strategy was established to manage missing data, either by removing rows with missing values, imputing missing data, or considering advanced imputation methods.</p>
+          <p>Duplicate Removal: Any duplicate rows were identified and removed to prevent duplication of information.</p>
+          <p>Inconsistency Correction: I identified and corrected inconsistencies in the data, such as fixing typos, standardizing measurement units, and addressing other discrepancies.</p>
+          <p>Outlier Management: Outliers were appropriately handled—either removed, transformed, or treated according to the context.</p>
+          <p>Consistency in Data Formats: Ensured that data formats, such as dates and categorical variables, were consistent across the dataset.</p>
+          <p>This project improved the dataset's quality, making it suitable for further analysis and helping ensure that the insights derived from it would be reliable and accurate.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-6" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 7 - Hypothesis Testing</b></h5>
+          <p>During my first project, I focused on analyzing cab company data to understand customer behavior better and optimize services. The main objective was to evaluate and improve the data quality and derive meaningful insights using statistical techniques.</p>
+          <p>I imported data from three different dataframes capturing information about cab trips, drop-offs, and weather conditions. Initial exploratory data analysis (EDA) helped identify and address duplicates and inconsistencies, ensuring clean data ready for analysis.</p>
+          <p>The "Trips" dataset required minimal cleaning and revealed that `Flash Cab` held a 19.7% market share among the top ten cab companies. This insight was crucial for understanding market dynamics within the dataset.</p>
+          <p>The "Drop-offs" dataset was categorized by average trips across various neighborhoods. "Loop" had the highest average trips, highlighting it as a significant area for cab services, followed by "River North" and "Streeterville."</p>
+          <p>The hypothesis tested was whether the average trip lengths from Loop to The International Airport of O'Hare change on rainy Saturdays. Using statistical tests like the Levene test for variances and the T-test for means, we found enough evidence to reject the null hypothesis, indicating a difference based on weather conditions.</p>
+          <p>This project not only improved the data quality of the cab databases but also provided significant analytical insights. The techniques used, including hypothesis testing and exploratory data analysis, furnish the cab companies with tools for better decision making and enhancing customer experience.</p>
+          <p>The structured approach and detailed coding, including handling statistical tests, underscore the importance of clean and well-analyzed data in deriving meaningful and actionable insights.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-7" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 8 - ML Classification</b></h5>
+          <p>During this project, I developed a machine learning model for Megaline, a telecommunications company, to analyze customer behavior and recommend data plans. The main objective was to use this model to categorize plans into either "Smart" or "Ultra."</p>
+          <p>First, I loaded the necessary data and conducted an exploratory analysis. The dataset was clean overall but required some minor adjustments, such as converting the data types for certain columns like calls and messages. After assessing the data quality and ensuring its suitability for modeling, I segmented it into training, validation, and testing datasets.</p>
+          <p>I explored three different classification algorithms to find the best model: Decision Tree, Random Forest, and Logistic Regression. Each model was painstakingly tuned to optimize its performance. For the Decision Tree and Random Forest, I iterated through a range of tree depths and estimator counts to determine the best fit for our data.</p>
+          <p>The Random Forest model emerged as the most effective, exhibiting substantial improvements over the Decision Tree and Logistic Regression models. It not only had the highest overall accuracy but also excelled in precision, recall, and F1 score, particularly in identifying true positives.</p>
+          <p>To conclude, this project effectively utilized data analysis and machine learning techniques to provide Megaline with a robust tool for making data-driven decisions about customer data plans. The Random Forest model, with its superior performance metrics, was recommended as the best option for deployment to help the company understand customer behavior and optimize their data plan offerings.</p>
+          <p>With these techniques we've ensured that the company can better understand their customers and therefore continuously improve their services.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-8" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 9 - ML Churn Prediction</b></h5>
+          <p>During this project, I developed a machine learning model for Beta Bank to predict whether customers would leave the bank soon. The primary goal was to create a model with the highest possible F1 score to ensure accurate prediction.</p>
+          <p>First, I preprocessed the data by conducting an exploratory analysis. The dataset required minor adjustments such as encoding categorical variables and filling null values. After cleaning the data, I split it into training and testing datasets.</p>
+          <p>I tested three classification algorithms: Random Forest, Support Vector Machine (SVM), and Logistic Regression. Using GridSearchCV, I performed hyperparameter tuning for each model, experimenting with different configurations to achieve the best performance.</p>
+          <p>Among the models, the Random Forest and SVM yielded the best results, with comparable performance metrics. The evaluation metrics included accuracy, precision, recall, and F1 score, with particularly close results in recall and precision.</p>
+          <p>However, the Random Forest model slightly outperformed the SVM in terms of the Area Under the Receiver Operating Characteristic Curve (AUROC). Given the emphasis on precision in predicting which customers might leave, I recommended the Random Forest model as the optimal choice for deployment.</p>
+          <p>In conclusion, this project successfully utilized data analysis and machine learning techniques to provide Beta Bank with a robust tool for predicting customer churn. The Random Forest model was chosen for its superior ability to identify at-risk customers, thereby enabling the bank to implement retention strategies effectively.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-9" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 10 - ML Oil Prediction</b></h5>
+          <p>During this project, I developed a predictive model for OilyGiant to identify the optimal locations for 200 new oil wells. The primary goal was to accurately estimate the volume of reserves and identify the most profitable sites.</p>
+          <p>Firstly, I conducted an exploratory data analysis on data from three different regions. This dataset required adjustments, such as correcting data types and handling any textual anomalies. Data visualization, particularly using histograms, helped detect any abnormalities, especially in Region 2's data.</p>
+          <p>The next step was training a linear regression model, which involved splitting the data into training and testing sets with a 75% to 25% ratio. Model performance was evaluated using Root Mean Squared Error (RMSE). Region 1 data exhibited a normal distribution with good RMSE scores, while Region 2 data were skewed and potentially problematic.</p>
+          <p>To assess profitability, I calculated the reserve volumes and potential profits of the top 200 wells in each region. The bootstrap method was used to analyze average profit, confidence intervals, and risk of loss. Regions 1 and 3 showed high profitability and low risk, whereas Region 2 had inconsistencies.</p>
+          <p>Based on profitability metrics, Region 1 emerged as the best choice due to its higher total reserve volumes and more stable profit margins compared to Region 3. This analysis provided valuable insights for maximizing investment returns.</p>
+          <p>Finally, the project emphasized the importance of data preprocessing, including correcting data types and visualizing distributions, to ensure robust model performance. The comparison of profitability metrics across regions supported the decision-making process for OilyGiant.</p>
+          <p>In conclusion, the project successfully integrated data preprocessing, machine learning, and visualization techniques to recommend optimal drilling locations. This comprehensive approach ensured accurate predictions and supported OilyGiant's efforts in making data-driven decisions for new oil wells.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-10" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 11 - ML Insurance Prediction</b></h5>
+          
+          <p>During this project, I developed a machine learning model for Sure Tomorrow, an insurance company, to evaluate and resolve various tasks with the aid of machine learning techniques.</p>
+          <p>Initially, I explored the data to find clients similar to a given client, which helps in marketing. I utilized k-Nearest Neighbors (kNN) for clustering based on features like age, gender, income, and family members. Data were scaled using the MaxAbsScaler to enhance model performance. The kNN method was tested with both Euclidean and Manhattan distance metrics on scaled and non-scaled data, revealing significant differences in results when the data were not scaled.</p>
+          <p>Next, I addressed the probability predictions of whether a new client would receive insurance benefits, benchmarking kNN classification against a dummy model. This step involved evaluating models with their F1 Scores while varying k from 1 to 10 across original and scaled data. Scaling consistently improved model performance, underscoring the necessity of data scaling for classification tasks.</p>
+          <p>For regression problems, I predicted the number of insurance benefits a new client might receive using linear regression. I built custom implementations for linear regression by applying matrix operations to determine weights. Both original and scaled data showed the scaled data had better RMSE and R² scores, confirming the importance of data scaling in regression models.</p>
+          <p>To safeguard client data, I implemented data obfuscation by multiplying feature matrices with an invertible matrix P. This step ensured data protection without compromising model accuracy. The transformed data maintained robust RMSE and R² scores, proving that obfuscation does not degrade model performance. Testing with a class that can obfuscate and reverse data confirmed this approach’s efficacy.</p>
+          <p>Finally, the project involved evaluating the performance metrics and making conclusive decisions for field deployment. Each phase justified the approaches and techniques used to ensure optimized and protected data analysis, supportive of Sure Tomorrow’s data-driven goals.</p>
+          <p>In conclusion, this project effectively demonstrated how data preprocessing, scaling, regression, classification, and obfuscation techniques can be integrated to enhance decision-making processes. This approach ensures that Sure Tomorrow can derive valuable insights from their data while maintaining the integrity and confidentiality of client information.</p>          
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-11" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 12 - ML Car Price Prediction</b></h5>
+          <p>During this project, I developed a predictive model for Rusty Bargain to determine the market value of used cars. The primary goal was to create a model with high prediction quality, fast prediction speed, and efficient training time.</p>
+          <p>Initially, I performed data preprocessing, which involved handling missing values and correcting data types. For example, I opted to drop rows with null entries due to the significant weight of the dataset, which made imputations infeasible. I also used One-Hot Encoding (OHE) for categorical variables and scaled numerical features using StandardScaler.</p>
+          <p>I trained and evaluated several machine learning models, including Linear Regression, Random Forest, LightGBM, CatBoost, and XGBoost. Parameters for these models were optimized using GridSearchCV, and their performance was measured using RMSE (Root Mean Squared Error). Both preprocessing steps and model training were performed on training and testing splits of the data, ensuring robust evaluation metrics.</p>
+          <p>Linear Regression showed decent performance but was outperformed by ensemble methods like Random Forest and gradient boosting models. Random Forest provided better RMSE scores but took longer to train. Among the gradient boosting models, XGBoost achieved the best RMSE scores with an optimal prediction threshold around 1476 euros, followed closely by CatBoost and LightGBM.</p>
+          <p>An essential part of the preprocessing involved identifying and mitigating biases in the data. For instance, price values below 600 euros were excluded to avoid unrealistic entries, and registration years outside the 1980-2016 range were filtered out. Power values were constrained between 60 and 300 CV to maintain consistency with real-world data.</p>
+          <p>In addition to cleaning and transforming the data, I verified the presence of duplicate rows and removed them to ensure the dataset's integrity. This proactive approach helped improve the model's accuracy and reliability.</p>
+          <p>The project's conclusion emphasized the significance of comprehensive data preprocessing, including the correct encoding of categorical variables and scaling of numerical values. The comparison of various machine learning models highlighted the superior performance of gradient boosting techniques, particularly XGBoost, in predicting car prices while maintaining efficiency in training and prediction times.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-12" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 13 - ML Taxi Forecasting</b></h5>
+          <p>During this project, I developed a machine learning model for Sweet Lift Taxi to predict the number of taxi orders for the next hour. The main goal was to create a model with an RMSE not exceeding 48 on the test set.</p>
+          <p>First, I conducted data preprocessing by handling missing values and ensuring the data was consistent. I resampled the data by one hour and checked for duplicates and incoherencies in the dataset. After that, I visualized the monthly, weekly, daily, and hourly data trends to understand the data better.</p>
+          <p>I then trained several machine learning models including Linear Regression, Gradient Boosting, CatBoost, XGBoost, Auto ARIMA, and Prophet. These models were assessed using RMSE as the evaluation metric, with training and testing splits to ensure robust evaluation. The models were fine-tuned using GridSearchCV to optimize their performance.</p>
+          <p>The CatBoost model demonstrated the best performance, achieving an RMSE of around 45, followed by XGBoost and Prophet. These results were achieved through careful preprocessing, data scaling, and hyperparameter tuning that ensured the models were accurately trained on the historical data.</p>
+          <p>In the preprocessing phase, it was imperative to correct data types, fill missing values, and encode categorical variables appropriately. Additionally, I made use of data transformation techniques to maintain the integrity and consistency of the dataset for better model performance.</p>
+          <p>To ensure model robustness and reduce potential overfitting, I implemented a time series cross-validation using a TimeSeriesSplit approach. This method allowed for a thorough evaluation and selection of the best-performing model based on its prediction accuracy.</p>
+          <p>Finally, the project concluded with a comprehensive analysis of model performance. The results were compiled into a ranking table showcasing CatBoost as the top-performing model. The project validated the importance of extensive data preprocessing and rigorous model evaluation in achieving reliable predictions.</p>
+          <p>In conclusion, this project demonstrated how effective data preprocessing combined with advanced machine learning techniques can address predictive modeling challenges. Sweet Lift Taxi now has a reliable tool to forecast taxi demand, which can improve driver availability during peak hours and enhance customer satisfaction.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-13" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 14 - Movie Rating by Sentimental Analysis</b></h5>
+          <p>During this project, I developed several machine learning models to analyze customer reviews for Film Junky Union, focused on detecting negative movie reviews automatically. The objective was to achieve an F1 score of at least 0.85.</p>
+          <p>Initially, I conducted data preprocessing, addressing missing values and ensuring the data's consistency. I applied One-Hot Encoding (OHE) for categorical variables and scaled numerical features using StandardScaler. Text data was normalized to lowercase and stripped of digits, punctuation, and stopwords using NLTK and spaCy tools.</p>
+          <p>I tested several models, including Dummy Classifier, NLTK-based Logistic Regression, spaCy-based Logistic Regression, and BERT-based models. Models were evaluated using metrics like F1 score, accuracy, and ROC AUC. GridSearchCV was used to fine-tune model parameters, ensuring optimal performance.</p>
+          <p>Among the models, NLTK-based Logistic Regression showed outstanding performance, achieving an F1 score of 0.88. This model outperformed the spaCy-based Logistic Regression and the initial Dummy Classifier. BERT models showed promising results, but their performance depended on the dataset size, suggesting potential improvements with larger training sets.</p>
+          <p>I also analyzed the distribution of positive and negative reviews over the years, ensuring the dataset balance. This was crucial for the model's robustness and reliability during prediction. Additional steps included evaluating data for duplicates and null values and removing them to maintain data integrity.</p>
+          <p>A significant part of the preprocessing phase involved text tokenization and vectorization using TF-IDF. This transformation of text data into numerical format was essential for training the models. The comparison between NLTK and spaCy showed that NLTK performed better with TF-IDF in Logistic Regression models.</p>
+          <p>The project concluded with detailed model evaluations, compiling the results into a ranking table. NLTK-based Logistic Regression emerged as the top model due to its high F1 score and reliable performance across various metrics. This model is recommended for deployment in detecting negative movie reviews.</p>
+          <p>In conclusion, this project demonstrated the importance of thorough data preprocessing, the effectiveness of different text processing techniques, and comprehensive model evaluation. These efforts provided Film Junky Union with a reliable tool for enhancing customer insights and improving review analysis processes.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-14" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 15 - CNN Age Prediction</b></h5>
+          <p>During this project, I developed a neural network model to estimate the age of individuals based on facial images for a company’s application. The primary objective was to achieve a low mean absolute error (MAE) by efficiently processing the image data.</p>
+          <p>Initially, I managed data preprocessing, which included handling image data and labels. I created data generators using ImageDataGenerator from Keras to handle loading, augmenting, and rescaling the image data. These generators were essential for efficiently feeding the data into the neural network in batches.</p>
+          <p>I defined the model architecture using the ResNet50 backbone pre-trained on ImageNet for feature extraction. This model was chosen for its robustness in handling image data. I added layers on top of ResNet50 for global average pooling and a dense layer to produce a single real-valued output. The model was compiled with the Adam optimizer using a learning rate of 0.0001 and mean squared error as the loss function.</p>
+          <p>Training the model involved splitting the data into training and validation sets using a 75%-25% split. I implemented the training using 20 epochs and monitored the MAE for both training and validation sets to ensure the model's generalization capabilities. The training process included applying <code>%%time</code> to measure the execution time effectively.</p>
+          <p>Model evaluation showed promising performance, with the final MAE on the validation set reaching around 7.2 years. This result satisfied the project's threshold. Additionally, the use of TimeSeriesSplit for cross-validation helped ensure the robustness of the results.</p>
+          <p>A significant portion of the preprocessing involved cleaning the dataset by removing any duplicates and correcting any mismatches in the image-label pairs. This was crucial for maintaining data integrity and ensuring accurate model performance.</p>
+          <p>Finally, the project's comprehensive analysis validated the importance of thorough data preprocessing and the utilization of a robust model such as ResNet50. Deploying this model will enhance the company's capability to estimate ages accurately based on facial images, thereby enriching their application’s functionality.</p>
+          <p>In conclusion, this project successfully applied advanced data preprocessing and neural network techniques to create an effective age estimation model. The results demonstrated the model's capability in handling real-world image data, thus supporting the company’s business requirements efficiently.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-15" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 16 - Machine Learning Unsupervised Learning</b></h5>
+          <p>During this project, I developed a neural network model to estimate the age of individuals based on facial images for a company’s application. The primary objective was to achieve a low mean absolute error (MAE) by efficiently processing the image data.</p>
+          <p>Initially, I managed data preprocessing, which included handling image data and labels. I created data generators using ImageDataGenerator from Keras to handle loading, augmenting, and rescaling the image data. These generators were essential for efficiently feeding the data into the neural network in batches.</p>
+          <p>I defined the model architecture using the ResNet50 backbone pre-trained on ImageNet for feature extraction. This model was chosen for its robustness in handling image data. I added layers on top of ResNet50 for global average pooling and a dense layer to produce a single real-valued output. The model was compiled with the Adam optimizer using a learning rate of 0.0001 and mean squared error as the loss function.</p>
+          <p>Training the model involved splitting the data into training and validation sets using a 75%-25% split. I implemented the training using 20 epochs and monitored the MAE for both training and validation sets to ensure the model's generalization capabilities. The training process included applying <code>%%time</code> to measure the execution time effectively.</p>
+          <p>Model evaluation showed promising performance, with the final MAE on the validation set reaching around 7.2 years. This result satisfied the project's threshold. Additionally, the use of TimeSeriesSplit for cross-validation helped ensure the robustness of the results.</p>
+          <p>A significant portion of the preprocessing involved cleaning the dataset by removing any duplicates and correcting any mismatches in the image-label pairs. This was crucial for maintaining data integrity and ensuring accurate model performance.</p>
+          <p>Finally, the project's comprehensive analysis validated the importance of thorough data preprocessing and the utilization of a robust model such as ResNet50. Deploying this model will enhance the company's capability to estimate ages accurately based on facial images, thereby enriching their application’s functionality.</p>
+          <p>In conclusion, this project successfully applied advanced data preprocessing and neural network techniques to create an effective age estimation model. The results demonstrated the model's capability in handling real-world image data, thus supporting the company’s business requirements efficiently.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-16" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 17 - Machine Learning Churn Prediction</b></h5>
+          <p>During this project, I focused on developing a machine learning model for customer churn prediction for an insurance company. The main objective was to manage data preprocessing, accurately predicting customer churn, and ensuring model robustness.</p>
+          <p>First, I conducted data preprocessing by managing missing values and ensuring consistency in the dataset. I performed One-Hot Encoding (OHE) for categorical variables, and scaling of numerical features using StandardScaler. Missing values were handled using SimpleImputer and imputations were performed through machine learning models when necessary.</p>
+          <p>I trained and evaluated several machine learning models, including Logistic Regression, XGBoost, LightGBM, and a simple neural network using Keras. Each model was carefully tuned using GridSearchCV to optimize hyperparameters, and performance was measured using evaluation metrics such as ROC AUC and accuracy. Training and testing datasets were created using an 80%-20% split to ensure robust evaluation.</p>
+          <p>The logistic regression model achieved a good balance between accuracy and computational efficiency. However, the XGBoost model outperformed others in terms of ROC AUC, making it the best candidate for predicting customer churn. LightGBM also showed promising results but was slightly less effective compared to XGBoost. The neural network model also provided decent performance but required more computational resources and longer training times.</p>
+          <p>A critical part of the preprocessing involved ensuring that categorical variables were correctly encoded and numerical values were appropriately scaled. This preprocessing step was vital for enhancing model performance and prediction accuracy.</p>
+          <p>Cross-validation using TimeSeriesSplit was implemented to further validate model robustness, ensuring that the models performed well on different time segments of the data. Oversampling techniques such as SMOTE were also explored to handle class imbalance in the target variable, though the logistic regression model did not require significant oversampling.</p>
+          <p>Finally, the project concluded with a comprehensive analysis comparing all models' performances. The results indicated that the XGBoost model was the top performer, followed closely by LightGBM and Logistic Regression. These findings provided actionable insights for deploying a reliable churn prediction model within the insurance company.</p>
+          <p>In summary, this project successfully applied advanced preprocessing techniques and various machine learning models to predict customer churn. The results affirmed the importance of thorough preprocessing and model evaluation, providing the insurance company with a robust solution to enhance customer retention strategies.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+        <div id="desc-16" class="desc-card" style="display: none;">
+          <h5 class="project-title"><b>Project 18 - Phishing Classification</b></h5>
+          <p>During this project, I developed a machine learning model to predict phishing websites from legitimate ones. The main goal was to achieve high accuracy and robustness in identifying phishing attempts based on various extracted features.</p>
+          <p>First, data preprocessing was essential. I managed missing values, ensured data consistency, and transformed categorical variables using One-Hot Encoding (OHE). For numerical features, I applied scaling techniques using StandardScaler to normalize the data. This step was paramount in preparing the data for the machine learning models.</p>
+          <p>I experimented with several machine learning models, including Logistic Regression and LightGBM. These models were evaluated using metrics like ROC AUC and accuracy. GridSearchCV was used to fine-tune hyperparameters, ensuring optimal model performance. The training involved an 80%-20% split for training and testing, respectively.</p>
+          <p>Logistic Regression performed decently, providing a good balance between accuracy and computational efficiency. However, the LightGBM model outperformed others, achieving superior results in ROC AUC metrics. This made LightGBM the best candidate for deployment in identifying phishing websites.</p>
+          <p>Key preprocessing steps included handling outliers and ensuring that categorical values were correctly encoded. These steps were critical for enhancing the model's predictive accuracy and overall performance. Effective transformation and selection of features played an essential role in the success of this phase.</p>
+          <p>To ensure the robustness of the model, I employed cross-validation techniques, specifically using TimeSeriesSplit. This method verified the model’s consistency across different segments of the data. Additionally, I explored techniques like SMOTE to address class imbalance in the target variable, though Logistic Regression handled class balance well even without significant oversampling.</p>
+          <p>The project concluded with a thorough evaluation, comparing all the models’ performances. The LightGBM model emerged as the top performer with the highest ROC AUC score, followed by Logistic Regression. These findings provided the basis for recommending the LightGBM model for production deployment.</p>
+          <p>In summary, this project demonstrated the importance of comprehensive data preprocessing and robust model evaluation in building effective machine learning solutions for phishing detection. The insurance company now has a reliable tool to enhance its cybersecurity measures, detecting phishing websites with high accuracy and efficiency.</p>
+          <p><a href="www.google.com">Check out my repository</a></p>
+        </div>
+
+
+        <!-- Otros proyectos -->
+    </div>
 </div>
+
 
 <script src="js/portfolio.js"></script> <!-- Archivo JS externo -->
 <!-- ___________________________ -->
